@@ -147,8 +147,9 @@ const Banner = () => {
         <Slider {...settings}>
           <div>
             <Link>
-              <picture className="w-full h-[600px]">
+              <picture>
                 <Image
+                  className="w-full"
                   imageLink={bannerImageOne}
                   altText={"banner-item-image"}
                 />
@@ -157,8 +158,9 @@ const Banner = () => {
           </div>
           <div>
             <Link>
-              <picture className="w-full h-[600px]">
+              <picture>
                 <Image
+                  className="w-full"
                   imageLink={bannerImageOne}
                   altText={"banner-item-image"}
                 />
@@ -167,8 +169,9 @@ const Banner = () => {
           </div>
           <div>
             <Link>
-              <picture className="w-full h-[600px]">
+              <picture>
                 <Image
+                  className="w-full"
                   imageLink={bannerImageOne}
                   altText={"banner-item-image"}
                 />
