@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div className=" sticky top-0 left-0 right-0 !z-50">
-      <nav className="py-4 md:py-5 lg:py-6 !z-20 bg-white backdrop-blur-lg">
+      <nav className="py-2 sm:py-3 md:py-4 lg:py-5 !z-20 bg-white backdrop-blur-lg">
         <Container>
           <Flex
             className={

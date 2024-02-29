@@ -22,7 +22,7 @@ import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 
 const Header = () => {
   return (
-    <section className="bg-[#f5f5f3] py-3 sm:py-4 md:py-5 lg:py-6">
+    <section className="bg-[#f5f5f3] py-2 sm:py-3 md:py-4 ">
       <Container>
         <Flex className="items-center justify-between">
           <Menu>
