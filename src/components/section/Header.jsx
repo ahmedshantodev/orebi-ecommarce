@@ -36,7 +36,7 @@ const Header = () => {
   const [accountDropDownShow, setAccountDropDownShow] = useState(false);
   let accountRef = useRef();
 
-  const [addToCartShow, setAddToCartShow] = useState(true);
+  const [addToCartShow, setAddToCartShow] = useState(false);
   let addToCartRef = useRef();
 
   useEffect(() => {
