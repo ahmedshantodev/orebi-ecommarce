@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Container from "../components/layout/Container";
 import Flex from "../components/layout/Flex";
 import BreadCrump from "../components/layout/BreadCrump";
@@ -22,6 +22,19 @@ const Shop = () => {
   const [paginationItemShow, setPaginationItemShow] = useState(12);
   const [sideBarShow, setSideBarShow] = useState(false);
 
+  let categoryRef = useRef();
+  let buttonRef = useRef();
+
+  useEffect(() => {
+    document.body.addEventListener("click", (e) => {
+      if (buttonRef.current.contains(e.target)) {
+        setSideBarShow(true);
+      } else if (!categoryRef.current.contains(e.target)) {
+        setSideBarShow(false);
+      }
+    });
+  }, []);
+
   return (
     <section className=" ">
       <Container>
@@ -31,7 +44,10 @@ const Shop = () => {
             "justify-between mt-5 sm:mt-7 md:mt-10 lg:mt-13 xl:mt-16 gap-x-4 sm:gap-x-3 md:gap-x-6 lg:gap-8 xl:gap-x-12 relative"
           }
         >
-          <div className={`${sideBarShow ? " translate-x-0" : " -translate-x-[110%] sm:translate-x-0"} bg-[#f5f5f3] p-4 sm:p-0 w-2/3 sm:w-1/5 sm:static absolute top-0 left-0 sm:bg-white z-10 sm:block rounded-[10px] sm:rounded-none transition duration-300`}>
+          <div
+            ref={categoryRef}
+            className={`${sideBarShow ? " translate-x-0" : " -translate-x-[110%] sm:translate-x-0"} bg-[#f5f5f3] p-4 sm:p-0 w-2/3 sm:w-1/5 sm:static absolute top-0 left-0 sm:bg-white z-10 sm:block rounded-[10px] sm:rounded-none transition duration-300`}
+          >
             <ShopSideBarDropDown
               dropDownOn={false}
               dropDownTitle={"shop by category"}
@@ -52,11 +68,17 @@ const Shop = () => {
               dropDownTitle={"shop by price"}
               data={price}
             />
-            <MdCancel onClick={() => setSideBarShow(!sideBarShow)} className=" absolute top-4 right-4 cursor-pointer active:scale-110 sm:hidden"/>
+            <MdCancel
+              onClick={() => setSideBarShow(false)}
+              className=" absolute top-4 right-4 cursor-pointer active:scale-110 sm:hidden"
+            />
           </div>
 
           <div className="w-full sm:w-4/5 md:w-4/5">
-            <div onClick={() => setSideBarShow(!sideBarShow)} className={"flex gap-2 sm:hidden mb-4 cursor-pointer"}>
+            <div
+              ref={buttonRef}
+              className={"flex w-28 gap-2 sm:hidden mb-4 cursor-pointer"}
+            >
               <img
                 className="w-[20px] rotate-90"
                 src="../../public/assets/optionsicon.gif"
