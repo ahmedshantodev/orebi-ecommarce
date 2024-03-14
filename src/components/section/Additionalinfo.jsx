@@ -8,7 +8,7 @@ import { IoReloadSharp } from "react-icons/io5";
 
 const Additionalinfo = () => {
   return (
-    <section className="-mt-2.5 border border-solid py-2.5 sm:py-3 md:py-4 lg:py-5">
+    <section className="-mt-2.5 border-b py-2.5 sm:py-3 md:py-4 lg:py-5">
       <Container>
         <Flex className={"justify-between items-center"}>
           <Flex className={"items-center gap-x-1 sm:gap-x-2 md:gap-x-3 lg:gap-x-4"}>

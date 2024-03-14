@@ -21,7 +21,7 @@ const NewArrivals = () => {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 2,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     responsive: [
@@ -65,10 +65,10 @@ const NewArrivals = () => {
             {...settings}
           >
             {newarrivals.map((item , index) => (
-              <div>
+              <div className="w-full">
                 <ProductCard
                   className={
-                    "w-full sm:w-[305px] md:w-[340px] lg:w-[300px] xl:w-[370px]"
+                    "w-[80%] mx-auto sm:w-[305px] md:w-[340px] lg:w-[300px] xl:w-[370px]"
                   }
                   key={index}
                   productImageLink={item.productImageSrc}
@@ -82,13 +82,13 @@ const NewArrivals = () => {
             ))}
           </Slider>
           <button
-            className="absolute py-2.5 px-2.5 lg:py-5 lg:px-5 rounded-full left-1 bg-[#979797] button top-2/4"
+            className="absolute py-2 px-2 md:px-3 md:py-3 lg:py-3 lg:px-3 xl:py-5  xl:px-5 rounded-full left-2 bg-[#979797] button top-2/4 -translate-y-2/4"
             onClick={previous}
           >
             <FaArrowLeft className="text-white text-[12px] lg:text-[16px]" />
           </button>
           <button
-            className="absolute py-2.5 px-2.5 lg:py-5 lg:px-5 rounded-full right-4 lg:right-2 bg-[#979797] button top-2/4"
+            className="absolute py-2 px-2 md:px-3 md:py-3 lg:py-3 lg:px-3 xl:py-5  xl:px-5 rounded-full right-2.5 lg:right-2 bg-[#979797] button top-2/4 -translate-y-2/4"
             onClick={next}
           >
             <FaArrowRight className="text-white text-[12px] lg:text-[16px]" />

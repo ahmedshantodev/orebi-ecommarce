@@ -69,16 +69,16 @@ const ProductCard = ({
       <Flex className="items-center justify-between pt-3 md:pt-[14px] xl:pt-5 pb-1 xl:pb-[15px] product-info">
         <Heading
           text={productName}
-          className=" text-lg xl:text-xl font-bold capitalize font-dm-sans"
+          className="text-[15px] md:text-lg xl:text-xl font-bold capitalize font-dm-sans"
         />
         <Paragraph
           text={productPrice}
-          classname={"font-dm-sans text-[#767676] capitalize"}
+          classname={"font-dm-sans text-xs md:text-base text-[#767676] capitalize"}
         />
       </Flex>
       <Paragraph
         text={productColor}
-        classname={"font-dm-sans text-[#767676] capitalize"}
+        classname={"font-dm-sans text-xs md:text-base text-[#767676] capitalize"}
       />
     </div>
   );
