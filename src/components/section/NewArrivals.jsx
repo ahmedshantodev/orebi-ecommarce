@@ -64,12 +64,10 @@ const NewArrivals = () => {
             }}
             {...settings}
           >
-            {newarrivals.map((item , index) => (
-              <div className="w-full">
+            {newarrivals.map((item, index) => (
+              <div className="w-full sm:w-[300px] md:w-[47%] lg:w-[31%] xl:w-[23%]">
                 <ProductCard
-                  className={
-                    "w-[80%] mx-auto sm:w-[305px] md:w-[340px] lg:w-[300px] xl:w-[370px]"
-                  }
+                  className={"mx-auto w-[80%] sm:w-[95%]"}
                   key={index}
                   productImageLink={item.productImageSrc}
                   tag={item.badgeText}
@@ -82,13 +80,13 @@ const NewArrivals = () => {
             ))}
           </Slider>
           <button
-            className="absolute py-2 px-2 md:px-3 md:py-3 lg:py-3 lg:px-3 xl:py-5  xl:px-5 rounded-full left-2 bg-[#979797] button top-2/4 -translate-y-2/4"
+            className="absolute py-2 px-2 md:px-3 md:py-3 lg:py-3 lg:px-3 xl:py-5  xl:px-5 rounded-full left-2 bg-[#979797] button top-2/4"
             onClick={previous}
           >
             <FaArrowLeft className="text-white text-[12px] lg:text-[16px]" />
           </button>
           <button
-            className="absolute py-2 px-2 md:px-3 md:py-3 lg:py-3 lg:px-3 xl:py-5  xl:px-5 rounded-full right-2.5 lg:right-2 bg-[#979797] button top-2/4 -translate-y-2/4"
+            className="absolute py-2 px-2 md:px-3 md:py-3 lg:py-3 lg:px-3 xl:py-5  xl:px-5 rounded-full right-2.5 lg:right-2 bg-[#979797] button top-2/4 "
             onClick={next}
           >
             <FaArrowRight className="text-white text-[12px] lg:text-[16px]" />

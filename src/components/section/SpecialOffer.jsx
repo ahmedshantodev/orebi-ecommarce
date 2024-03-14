@@ -14,18 +14,20 @@ const SpecialOffer = () => {
           text="Special Offer"
           className="font-bold font-dm-sans text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px] xl:text-[35px] 2xl:text-[40px] capitalize pb-3 sm:pb-5 md:pb-8 lg:pb-10 2xl:pb-12"
         />
-        <Flex className={"justify-between flex-wrap"}>
+        <Flex className={"justify-center gap-x-6 md:gap-x-8 flex-wrap"}>
           {specialoffer.map((item, index) => (
-            <ProductCard
-              key={index}
-              className="mb-4 w-full sm:w-[310px] md:w-[340px] lg:w-[300px] xl:w-[370px]"
-              productImageLink={item.productImageSrc}
-              tag={item.badgeText}
-              tagVisibility={item.badge}
-              productName={item.productName}
-              productPrice={item.productPrice}
-              productColor={item.productColor}
-            />
+            <div className="mb-4 w-full sm:w-[300px] md:w-[47%] lg:w-[31%] xl:w-[23%]">
+              <ProductCard
+                key={index}
+                className="mx-auto w-[95%] sm:w-full"
+                productImageLink={item.productImageSrc}
+                tag={item.badgeText}
+                tagVisibility={item.badge}
+                productName={item.productName}
+                productPrice={item.productPrice}
+                productColor={item.productColor}
+              />
+            </div>
           ))}
         </Flex>
       </Container>
