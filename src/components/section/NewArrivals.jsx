@@ -71,7 +71,6 @@ const NewArrivals = () => {
                   key={index}
                   productImageLink={item.productImageSrc}
                   tag={item.badgeText}
-                  tagVisibility={item.badge}
                   productName={item.productName}
                   productPrice={item.productPrice}
                   productColor={item.productColor}

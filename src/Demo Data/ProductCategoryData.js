@@ -777,23 +777,19 @@ let productInfo = [
 
 let newarrivals = [
   {
-    badge: true,
-    badgeText: "new",
     productImageSrc: productImageOne,
     productName: "Wireless Earbuds",
     productPrice: "$15.00",
     productColor: "purple",
   },
   {
-    badge: true,
-    badgeText: "10%",
+    badgeText: "new",
     productImageSrc: productImageTwo,
     productName: "Bluetooth Headphones",
     productPrice: "$15.00",
     productColor: "green",
   },
   {
-    badge: false,
     badgeText: "10%",
     productImageSrc: productImageThree,
     productName: "Water Bottle",
@@ -801,7 +797,6 @@ let newarrivals = [
     productColor: "purple",
   },
   {
-    badge: true,
     badgeText: "10%",
     productImageSrc: productImageFour,
     productName: "USB Cable",
@@ -809,7 +804,6 @@ let newarrivals = [
     productColor: "white",
   },
   {
-    badge: true,
     badgeText: "new",
     productImageSrc: productImageOne,
     productName: "Wireless Earbuds",
@@ -817,15 +811,12 @@ let newarrivals = [
     productColor: "purple",
   },
   {
-    badge: true,
-    badgeText: "10%",
     productImageSrc: productImageTwo,
     productName: "Bluetooth Headphones",
     productPrice: "$15.00",
     productColor: "blue",
   },
   {
-    badge: false,
     badgeText: "10%",
     productImageSrc: productImageThree,
     productName: "Water Bottle",
@@ -833,7 +824,6 @@ let newarrivals = [
     productColor: "purple",
   },
   {
-    badge: true,
     badgeText: "10%",
     productImageSrc: productImageFour,
     productName: "USB Cable",
@@ -844,15 +834,13 @@ let newarrivals = [
 
 let bestsaller = [
   {
-    badge: true,
-    badgeText: "10%",
+    
     productImageSrc: productImageFour,
     productName: "USB Cable",
     productPrice: "$15.00",
     productColor: "white",
   },
   {
-    badge: true,
     badgeText: "new",
     productImageSrc: productImageOne,
     productName: "Wireless Earbuds",
@@ -860,7 +848,6 @@ let bestsaller = [
     productColor: "purple",
   },
   {
-    badge: false,
     badgeText: "10%",
     productImageSrc: productImageThree,
     productName: "Water Bottle",
@@ -868,7 +855,6 @@ let bestsaller = [
     productColor: "purple",
   },
   {
-    badge: true,
     badgeText: "10%",
     productImageSrc: productImageTwo,
     productName: "Bluetooth Headphones",
@@ -879,7 +865,7 @@ let bestsaller = [
 
 let specialoffer = [
   {
-    badge: true,
+   
     badgeText: "new",
     productImageSrc: productImageOne,
     productName: "Wireless Earbuds",
@@ -887,7 +873,7 @@ let specialoffer = [
     productColor: "purple",
   },
   {
-    badge: true,
+    
     badgeText: "10%",
     productImageSrc: productImageTwo,
     productName: "Bluetooth Headphones",
@@ -895,15 +881,14 @@ let specialoffer = [
     productColor: "green",
   },
   {
-    badge: false,
-    badgeText: "10%",
+    
     productImageSrc: productImageThree,
     productName: "Water Bottle",
     productPrice: "$15.00",
     productColor: "purple",
   },
   {
-    badge: true,
+   
     badgeText: "10%",
     productImageSrc: productImageFour,
     productName: "USB Cable",

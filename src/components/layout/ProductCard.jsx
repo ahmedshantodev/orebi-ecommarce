@@ -15,19 +15,16 @@ const ProductCard = ({
   productName,
   productPrice,
   productColor,
-  tagVisibility,
 }) => {
   return (
-    <div
-      className={`${className} group`}
-    >
+    <div className={`${className} group`}>
       <div className="relative overflow-y-hidden top-part">
         <Image
           imageLink={productImageLink}
           altText={"product-image"}
           className={"w-full"}
         />
-        {tagVisibility && (
+        {tag && (
           <Paragraph
             text={tag}
             classname={
@@ -73,12 +70,16 @@ const ProductCard = ({
         />
         <Paragraph
           text={productPrice}
-          classname={"font-dm-sans text-xs md:text-base text-[#767676] capitalize"}
+          classname={
+            "font-dm-sans text-xs md:text-base text-[#767676] capitalize"
+          }
         />
       </Flex>
       <Paragraph
         text={productColor}
-        classname={"font-dm-sans text-xs md:text-base text-[#767676] capitalize"}
+        classname={
+          "font-dm-sans text-xs md:text-base text-[#767676] capitalize"
+        }
       />
     </div>
   );
